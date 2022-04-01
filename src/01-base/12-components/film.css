@@ -1,0 +1,88 @@
+div.film{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.film header{
+    position: sticky;
+}
+
+div.film input{
+    height: 36px;
+    padding: 8px;
+    width:calc(100% - 8px);
+    border: 1px solid #f5f5f5;
+    border-radius: 16px;;
+    margin:4px;
+    box-sizing: border-box;
+}
+
+div.film header ul.filter {
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+div.film section{
+    height: 200px;
+    width: 100%;
+    /* display: flex; */
+    /* flex:1; */
+    /* flex-direction: column; */
+    /* overflow: scroll; */
+    /* background-color: aqua; */
+}
+
+
+div.film section ul.cinemas{
+    display: flex;
+    width: 100%;
+    /* flex:1; */
+    flex-direction: column;
+    /* overflow: scroll; */
+}
+
+div.film section ul.cinemas li{
+    height: 46px;
+    line-height: 46px;
+    /* flex:1; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+div.film section ul.cinemas li div{
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.film section ul.cinemas li div span:nth-child(1){
+    line-height: 24px;
+    height: 24px;
+    font-size: 16px;
+}
+
+div.film section ul.cinemas li div span:nth-child(2){
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #afafaf;
+}
+
+div.film section ul.cinemas li div:last-child{
+    text-align: right;
+    color: lightcoral;
+}
