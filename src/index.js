@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './02-advance/03-生命周期.js';
+import App from './02-advance/04-banner-swiper';
 
 ReactDOM.render(
   <App></App>,
