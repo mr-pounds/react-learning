@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './02-advance/04-banner-swiper';
+import App from './02-advance/05-hooks';
 
 ReactDOM.render(
   <App></App>,
