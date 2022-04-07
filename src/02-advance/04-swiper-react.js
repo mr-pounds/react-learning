@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import ZSwiper from './component/ZSwiper'
 import axios from 'axios'
+import { Swiper, SwiperSlide} from 'swiper/react'
+import {Pagination, Navigation} from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 export default class App extends Component {
 
@@ -34,15 +37,24 @@ export default class App extends Component {
         height: '200px',
         background: 'yellow'
       }}>
-        <ZSwiper loop={true}>
+        <Swiper loop={true} modules={[Pagination, Navigation]} pagination={{
+          el: '.swiper-pagination',
+          clickable: true
+        }}>
           {
             this.state.bannerList.map((item) => {
                 return (
-                    <img key={item.bannerId} src={item.imgUrl} alt={item.name} />
+                  <SwiperSlide key={item.bannerId}>
+                    <img  src={item.imgUrl} alt={item.name} style={{
+                      height: '200px',
+                      width: '100%'
+                    }}/>
+                  </SwiperSlide>
                 )
             })
           }
-        </ZSwiper>
+          <div className='swiper-pagination'></div>
+        </Swiper>
       </div>
     )
   }
